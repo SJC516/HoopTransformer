@@ -41,9 +41,9 @@ def web2(video_file_path,video_duration,frame_count):
     col1, col2= st.columns([3,1])
     
     with col1:
-        video_file = open(video_file_path, 'rb')
-        video_bytes = video_file.read()
-        st.video(video_bytes)
+        #video_file = open(video_file_path, 'rb')
+        #video_bytes = video_file.read()
+        st.video(video_file_path)
 
         
     with col2:
@@ -67,7 +67,7 @@ def web2(video_file_path,video_duration,frame_count):
     
 
 if __name__=='__main__':
-    video_file_path = '/../video/1696750694862807_382.mp4'
+    video_file_path = 'https://youtu.be/ugTH91GmLTs'
     # 使用 moviepy 读取视频
     video = VideoFileClip(video_file_path)
     # 获取视频的总时长（以秒为单位）
