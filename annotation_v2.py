@@ -68,14 +68,6 @@ def web2(video_file_path,video_duration,frame_count):
 
 if __name__=='__main__':
     video_file_path = 'https://youtu.be/ugTH91GmLTs'
-    # 使用 moviepy 读取视频
-    video = VideoFileClip(video_file_path)
-    # 获取视频的总时长（以秒为单位）
-    video_duration = video.duration
-    video1 = cv2.VideoCapture(video_file_path)
-    # 获取视频的帧数
-    frame_count = int(video1.get(cv2.CAP_PROP_FRAME_COUNT))
-    
     if 'res_df' not in st.session_state:
         st.session_state['res_df']=[]
     
