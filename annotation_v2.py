@@ -1,7 +1,6 @@
 #输出为json
 import streamlit as st
 import pandas as pd
-from moviepy.editor import VideoFileClip
 import cv2
 import json
 
