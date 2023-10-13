@@ -1,7 +1,6 @@
 #输出为json
 import streamlit as st
 import pandas as pd
-import cv2
 import json
 
 def save_data(res):
